@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crafty Cup</title>
+    <!-- <link rel="stylesheet" href="/CSS/index.css"> -->
+    <style>
+      body {
+        margin: 0;
+      }
+      .header {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border: 1px solid burlywood;
+        background-color: rgb(255, 255, 255);
+      }
+      .logo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .name {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Kaushan Script", cursive;
+      }
+      .logoAndName {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        
+      }
+      .navBar ul li {
+        list-style: none;
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+        font-size: 20px;
+        /* font-weight: bold; */
+        font-family: "Kaushan Script", cursive;
+        cursor: pointer;
+        color: black;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      main {
+        width: 100%;
+        height: calc(100vh - 90px);
+        background-color: rgb(228, 216, 199);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="logoAndName">
+          <img
+            class="logo"
+            src="/assects/images/coffee logo.jpg"
+            alt="logo-image"
+          />
+          <p class="name">Crafty Cup</p>
+        </div>
+        <div class="navBar">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Recipies</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Overview</a></li>
+            <li><a href="">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero"></section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
