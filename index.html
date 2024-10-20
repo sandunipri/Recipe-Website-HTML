@@ -4,22 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crafty Cup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="stylesheet" href="/CSS/index.css"> -->
     <style>
       body {
         width: 100%;
-        height: 100vh;
+        height: auto;
         margin: 0;
       }
-      .header {
+      h3 {
+        margin: 0;
+      }
+      header {
         width: 100%;
-        height: 90px;
+        height: 80px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        /* border: 1px solid burlywood; */
-        background-color: black;
+        background-color: #fffef5;
+        box-shadow: 0px 0px 10px gray;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
       }
       .logo {
         width: 60px;
@@ -30,7 +43,7 @@
         font-size: 30px;
         font-weight: bold;
         font-family: "Kaushan Script", cursive;
-        color: white;
+        color: #513c3c;
       }
       .logoAndName {
         display: flex;
@@ -48,45 +61,87 @@
         font-size: 20px;
         font-family: "Kaushan Script", cursive;
         cursor: pointer;
-        color: white;
       }
       a {
         text-decoration: none;
-        color: white;
+        color: #513c3c;
       }
       main {
         width: 100%;
-        height: calc(100% - 90px);
-        background-color: rgb(222, 201, 174);
+        height: calc(100% - 80px);
+      }
+
+      .content {
+        padding-top: 80px;
+        padding-bottom: 30px;
+        /* background-color: aqua; */
         display: flex;
         flex-direction: column;
-        align-items: start;
+        row-gap: 20px;
         justify-content: center;
+        align-items: center;
+      }
+      .title {
+        margin: 0;
+        margin-top: 30px;
+        font-size: 30px;
+        letter-spacing: 10px;
+        word-spacing: 15px;
+        text-align: center;
+        font-family: "Kaushan Script", cursive;
+        color: #513c3c;
+        font-weight: bold;
+      }
+      .description {
+        margin: 0;
+        margin: 0 70px;
+        font-family: "Arima", system-ui;
+        font-size: 25px;
+        text-align: center;
+      }
+      .card-set-1,
+      .card-set-2 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 35px;
+      }
+
+      .topic {
+        margin: 0;
+        margin-left: 130px;
+        font-size: 30px;
+        letter-spacing: 6px;
+        font-family: "Kaushan Script", cursive;
+        color: #513c3c;
+        font-weight: bold;
+        font-family: "Arima", system-ui;
       }
       .card {
         width: 300px;
         height: 550px;
-        margin-left: 20px;
-        /* border: 1px solid black; */
-        box-shadow: 0 10px 10px burlywood;
         background-color: rgb(238, 221, 199);
         display: flex;
         flex-direction: column;
+        gap: 10px;
         align-items: center;
-        border-radius: 25px;
+        border-radius: 5px;
       }
       .card img {
-        width: 250px;
-        height: 200px;
+        width: 300px;
+        height: 375px;
         object-fit: cover;
-        border-radius: 20px;
       }
       .card p {
+        margin: 0;
         font-size: 15px;
-        /* font-family: "Kaushan Script", cursive; */
+        font-family: "Kaushan Script", cursive;
         padding: 0 10px;
       }
       .card button {
+        margin-top: 10px;
         width: 250px;
         height: 40px;
         border-radius: 20px;
@@ -95,47 +150,140 @@
         font-family: "Kaushan Script", cursive;
         font-size: 20px;
       }
+      .card-set {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        row-gap: 20px;
+      }
+      footer{
+
+      }
     </style>
   </head>
   <body>
     <header>
-      <div class="header">
-        <div class="logoAndName">
-          <img
-            class="logo"
-            src="/assects/images/coffee logo.jpg"
-            alt="logo-image"
-          />
-          <p class="name">Crafty Cup</p>
-        </div>
-        <div class="navBar">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Recipies</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Overview</a></li>
-            <li><a href="">Contacts</a></li>
-          </ul>
-        </div>
+      <div class="logoAndName">
+        <img
+          class="logo"
+          src="/assects/images/coffee logo.jpg"
+          alt="logo-image"
+        />
+        <p class="name">Crafty Cup</p>
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Recipies</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Contacts</a></li>
+        </ul>
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="card">
-          <img src="/assects/images/coffee-image-01.jpg" alt="Coffee-image" />
-          <h3>Espresso Coffee</h3>
-          <p>
-            To make espresso, grind 18-20 grams of coffee to a fine consistency,
-            similar to table salt. Tamp the grounds firmly into the portafilter,
-            creating an even surface. Preheat your espresso machine, then brew
-            the shot for 25-30 seconds, producing about 1.5-2 ounces of espresso
-            with a layer of crema on top. Enjoy it as is or use it as a base for
-            other coffee drinks.
-          </p>
-          <button>Read More</button>
-        </div>
+      <section class="content">
+        <p class="title">CRAFTY CUP</p>
+        <p class="description">
+          "Start your day with the perfect brew at <b>Crafty Cup</b>, where
+          every cup is crafted with care and passion.Bringing you fresh, locally
+          sourced coffee and a space to connect, unwind, and recharge."
+        </p>
+      </section>
+
+      <section class="card-set">
+        <p class="topic">Fall Drinks</p>
+        <section class="card-set-1">
+          <div class="card">
+            <img src="/assects/images/coffee-card-01.jpg" alt="Coffee-image" />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+
+          <div class="card">
+            <img src="/assects/images/coffee-card-02.jpg" alt="Coffee-image" />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="/assects/images/cold brew pic 03.jpg"
+              alt="Coffee-image"
+            />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+
+          <div class="card">
+            <img src="/assects/images/coffee-card-04.jpg" alt="Coffee-image" />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+        </section>
+        <br />
+        <p class="topic">Homemade Coffee Creamer Recipes</p>
+        <section class="card-set-2">
+          <div class="card">
+            <img
+              src="/assects/images/latte coffe pic 01.jpg"
+              alt="Coffee-image"
+            />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+
+          <div class="card">
+            <img src="/assects/images/coffee-card-03.jpg" alt="Coffee-image" />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+
+          <div class="card">
+            <img
+              src="/assects/images/cold brew picture 01.jpg"
+              alt="Coffee-image"
+            />
+            <h3>Espresso Coffee</h3>
+            <p>
+              To make espresso, grind 18-20 grams of coffee to a fine
+              consistency, similar to table salt.
+            </p>
+            <button>Read More</button>
+          </div>
+        </section>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <hr />
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fuga nulla
+      adipisci. Itaque nisi quidem dolore beatae cumque, quibusdam atque
+      molestiae error? Fuga in totam non tempora. Repellat, quaerat sapiente.
+    </footer>
   </body>
 </html>
