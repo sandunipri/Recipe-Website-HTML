@@ -1,0 +1,204 @@
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fffef5;
+    box-shadow: 0px 0px 10px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Kaushan Script", cursive;
+    color: #513c3c;
+  }
+  .logoAndName {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .navBar ul li {
+    list-style: none;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 20px;
+    font-family: "Kaushan Script", cursive;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: #513c3c;
+  }
+  main {
+    width: 100%;
+    height: calc(100% - 80px);
+    padding-bottom: 20px;
+  }
+
+  .content {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .title {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 30px;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    text-align: center;
+    font-family: "Kaushan Script", cursive;
+    color: #513c3c;
+    font-weight: bold;
+  }
+  .description {
+    margin: 0;
+    margin: 0 70px;
+    font-family: "Arima", system-ui;
+    font-size: 25px;
+    text-align: center;
+  }
+  .card-set-1,
+  .card-set-2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 35px;
+  }
+
+  .topic {
+    margin: 0;
+    margin-left: 130px;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-family: "Kaushan Script", cursive;
+    color: #513c3c;
+    font-weight: bold;
+    font-family: "Arima", system-ui;
+  }
+  .card {
+    width: 300px;
+    height: 550px;
+    background-color: rgb(238, 221, 199);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .card img {
+    width: 300px;
+    height: 375px;
+    object-fit: cover;
+  }
+  .card p {
+    margin: 0;
+    font-size: 15px;
+    font-family: "Kaushan Script", cursive;
+    padding: 0 10px;
+  }
+  .card button {
+    margin-top: 10px;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    font-size: 20px;
+  }
+  .card-set {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  footer {
+    width: 100%;
+    height: 600px;
+    background-color: #361500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f-content {
+    width: calc(100% / 3);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: "Arima", system-ui;
+    /* gap: 20px; */
+  }
+
+  .about {
+    margin: 0;
+    font-size: 15px;
+
+    /* background-color: violet; */
+  }
+  .overview {
+    margin: 0;
+    font-size: 15px;
+
+    /* background-color: yellow; */
+  }
+  .contacts {
+    /* background-color: blue; */
+    gap: 10px;
+  }
+  .contacts p {
+    margin: 0;
+    font-size: 20px;
+    gap: 10px;
+  }
+  .copyright {
+    color: #fffef5;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 100px;
+  }

@@ -10,157 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="/CSS/index.css"> -->
-    <style>
-      body {
-        width: 100%;
-        height: auto;
-        margin: 0;
-      }
-      h3 {
-        margin: 0;
-      }
-      header {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        background-color: #fffef5;
-        box-shadow: 0px 0px 10px gray;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1;
-      }
-      .logo {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-      }
-      .name {
-        font-size: 30px;
-        font-weight: bold;
-        font-family: "Kaushan Script", cursive;
-        color: #513c3c;
-      }
-      .logoAndName {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        column-gap: 10px;
-      }
-      .navBar ul li {
-        list-style: none;
-        display: inline;
-        justify-content: center;
-        align-items: center;
-        margin-right: 30px;
-        font-size: 20px;
-        font-family: "Kaushan Script", cursive;
-        cursor: pointer;
-      }
-      a {
-        text-decoration: none;
-        color: #513c3c;
-      }
-      main {
-        width: 100%;
-        height: calc(100% - 80px);
-      }
-
-      .content {
-        padding-top: 80px;
-        padding-bottom: 30px;
-        /* background-color: aqua; */
-        display: flex;
-        flex-direction: column;
-        row-gap: 20px;
-        justify-content: center;
-        align-items: center;
-      }
-      .title {
-        margin: 0;
-        margin-top: 30px;
-        font-size: 30px;
-        letter-spacing: 10px;
-        word-spacing: 15px;
-        text-align: center;
-        font-family: "Kaushan Script", cursive;
-        color: #513c3c;
-        font-weight: bold;
-      }
-      .description {
-        margin: 0;
-        margin: 0 70px;
-        font-family: "Arima", system-ui;
-        font-size: 25px;
-        text-align: center;
-      }
-      .card-set-1,
-      .card-set-2 {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 20px;
-        row-gap: 35px;
-      }
-
-      .topic {
-        margin: 0;
-        margin-left: 130px;
-        font-size: 30px;
-        letter-spacing: 6px;
-        font-family: "Kaushan Script", cursive;
-        color: #513c3c;
-        font-weight: bold;
-        font-family: "Arima", system-ui;
-      }
-      .card {
-        width: 300px;
-        height: 550px;
-        background-color: rgb(238, 221, 199);
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-        border-radius: 5px;
-      }
-      .card img {
-        width: 300px;
-        height: 375px;
-        object-fit: cover;
-      }
-      .card p {
-        margin: 0;
-        font-size: 15px;
-        font-family: "Kaushan Script", cursive;
-        padding: 0 10px;
-      }
-      .card button {
-        margin-top: 10px;
-        width: 250px;
-        height: 40px;
-        border-radius: 20px;
-        background-color: black;
-        color: white;
-        font-family: "Kaushan Script", cursive;
-        font-size: 20px;
-      }
-      .card-set {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        row-gap: 20px;
-      }
-      footer{
-
-      }
-    </style>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <style></style>
   </head>
   <body>
     <header>
@@ -176,9 +27,9 @@
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Recipies</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Overview</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="#footer">About</a></li>
+          <li><a href="#footer">Overview</a></li>
+          <li><a href="#footer">Contacts</a></li>
         </ul>
       </div>
     </header>
@@ -202,17 +53,17 @@
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/espressoCoffee.html"><button>Read More</button></a>
           </div>
 
           <div class="card">
             <img src="/assects/images/coffee-card-02.jpg" alt="Coffee-image" />
-            <h3>Espresso Coffee</h3>
+            <h3>Americano Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/americanoCoffee.html"><button>Read More</button></a>
           </div>
 
           <div class="card">
@@ -220,22 +71,24 @@
               src="/assects/images/cold brew pic 03.jpg"
               alt="Coffee-image"
             />
-            <h3>Espresso Coffee</h3>
+            <h3>Cold Brew Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/coldBrewCoffee.html"> <button>Read More</button></a>
           </div>
 
           <div class="card">
             <img src="/assects/images/coffee-card-04.jpg" alt="Coffee-image" />
-            <h3>Espresso Coffee</h3>
+            <h3>Cappuccino Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/cappuccinoCoffee.html">
+              <button>Read More</button></a
+            >
           </div>
         </section>
         <br />
@@ -246,22 +99,26 @@
               src="/assects/images/latte coffe pic 01.jpg"
               alt="Coffee-image"
             />
-            <h3>Espresso Coffee</h3>
+            <h3>Macchiato Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/macchiatoCoffee.html">
+              <button>Read More</button></a
+            >
           </div>
 
           <div class="card">
             <img src="/assects/images/coffee-card-03.jpg" alt="Coffee-image" />
-            <h3>Espresso Coffee</h3>
+            <h3>Flat White Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/flatWhiteCoffee.html">
+              <button>Read More</button></a
+            >
           </div>
 
           <div class="card">
@@ -269,21 +126,57 @@
               src="/assects/images/cold brew picture 01.jpg"
               alt="Coffee-image"
             />
-            <h3>Espresso Coffee</h3>
+            <h3>Latte Coffee</h3>
             <p>
               To make espresso, grind 18-20 grams of coffee to a fine
               consistency, similar to table salt.
             </p>
-            <button>Read More</button>
+            <a href="/pages/latteCoffee.html"><button>Read More</button></a>
           </div>
         </section>
       </section>
+
+      <section></section>
     </main>
-    <footer>
-      <hr />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro fuga nulla
-      adipisci. Itaque nisi quidem dolore beatae cumque, quibusdam atque
-      molestiae error? Fuga in totam non tempora. Repellat, quaerat sapiente.
+    <footer id="footer">
+      <div class="footer-container">
+        <div class="about f-content">
+          <p>ABOUT CRAFTY CUP</p>
+          <p>
+            "Welcome to The Crafty Cup Cafe, where every cup is a masterpiece.
+            Our passion for coffee shines through in every carefully crafted
+            brew, made from the finest beans and served in a warm, artistic
+            space. Whether you’re here to catch up with friends, spark your
+            creativity, or simply enjoy a peaceful moment, we’ve created the
+            perfect blend of comfort and craftsmanship. At The Crafty Cup, every
+            sip is an experience worth savoring." This highlights both the
+            coffee and the cozy, creative atmosphere of your cafe.
+          </p>
+        </div>
+        <div class="contacts f-content">
+          <p>OPERATING HOURS : Mon - Sat - 8am to 6pm</p>
+          <p>ADDRESS : No 1/365, Mudduwa Rd, Rathnapura.</p>
+          <p>TELEPHONE : +94 76 2396 306</p>
+          <p>WHATSAPP : +94 76 4389 984</p>
+          <p>EMAIL : priyadarshanissp@gmail.com</p>
+        </div>
+        <div class="overview f-content">
+          <p>OVERVIEW</p>
+          The Crafty Cup Cafe is more than just a coffee shop—it's a haven for
+          coffee lovers, creatives, and community seekers alike. Nestled in a
+          cozy corner, we pride ourselves on offering expertly crafted coffee,
+          made from ethically sourced beans, in an environment designed to
+          inspire. Whether you're grabbing a quick cup to go or settling in for
+          a productive afternoon, our welcoming space is the perfect blend of
+          artistry and warmth. From signature drinks to hand-baked treats, The
+          Crafty Cup Cafe is where passion meets flavor, and every cup tells a
+          story.
+        </div>
+      </div>
+
+      <p class="copyright">
+        - Copyright &copy; 2023. Crafty Cup. All rights reserved -
+      </p>
     </footer>
   </body>
 </html>
