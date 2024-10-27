@@ -1,0 +1,95 @@
+.container {
+  width: 80%;
+  height: calc(100vh - 150px);
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: 0 0 20px gray;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+#image {
+  width: 30%;
+  height: calc(100vh - 170px);
+}
+.coffeedesc {
+  width: 70%;
+  height: calc(100vh - 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+#list {
+  margin: 0;
+  font-size: 20px;
+}
+
+#desc {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 20px;
+}
+#tips {
+  margin: 0;
+  padding: 0 30px;
+  font-size: 20px;
+}
+#menu {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+.box {
+  margin: 0;
+  width: 500px;
+  height: 300px;
+  font-size: 20px;
+  object-fit: cover;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 425px) {
+  .container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #image {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .coffeedesc {
+    width: 90%;
+    height: auto;
+  }
+  #menu {
+    font-size: 17px;
+  }
+  #list {
+    font-size: 15px;
+  }
+
+  #desc {
+    font-size: 15px;
+  }
+  #tips {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
