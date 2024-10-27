@@ -10,8 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="/CSS/index.css" />
-    <style></style>
+    <style>
+      @media screen and (max-width: 425px) {
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -25,12 +32,25 @@
       </div>
       <div class="navBar">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Recipies</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="/pages/recipies.html">Recipies</a></li>
           <li><a href="#footer">About</a></li>
           <li><a href="#footer">Overview</a></li>
           <li><a href="#footer">Contacts</a></li>
         </ul>
+      </div>
+      <i class="fa fa-bars burger" id="burgerbtn" aria-hidden="true"></i>
+
+      <!-- burger button -->
+      <div class="menu-list" id="menuList">
+        <button class="closebtn" id="closeBtn">&times;</button>
+        <nav class="menu">
+          <a href="#">Home</a>
+          <a href="#">About me</a>
+          <a href="#">Projects</a>
+          <a href="#">Skills</a>
+          <a href="#">Services</a>
+        </nav>
       </div>
     </header>
     <main>

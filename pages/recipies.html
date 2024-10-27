@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <style>
+      .container {
+        width: 80%;
+        height: calc(100vh - 150px);
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0 0 20px gray;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+      }
+      #image {
+        width: 30%;
+        height: calc(100vh - 170px);
+      }
+      .coffeedesc {
+        width: 70%;
+        height: calc(100vh - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+      }
+
+      #list {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      #desc {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 20px;
+      }
+      #tips {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 20px;
+      }
+      #menu {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .box {
+        margin: 0;
+        width: 500px;
+        height: 300px;
+        font-size: 20px;
+        object-fit: cover;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+ 
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logoAndName">
+        <img
+          class="logo"
+          src="/assects/images/coffee logo.jpg"
+          alt="logo-image"
+        />
+        <p class="name">Crafty Cup</p>
+      </div>
+      <div class="navBar">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/pages/recipies.html">Recipies</a></li>
+          <li><a href="/index.html#footer">About</a></li>
+          <li><a href="/index.html#footer">Overview</a></li>
+          <li><a href="/index.html#footer">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="recipie">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/espresso page pic.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">ESPRESSO COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>18-20 grams of freshly ground coffee (for a double shot)</li>
+              <li>Filtered water (about 200°F or 93°C)</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              A highly concentrated, intense shot of coffee with a robust, rich
+              flavor. The heart of many coffee drinks.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Use a fine grind and fresh beans for optimal flavor. Aim for a
+              "crema" on top of a golden, foamy layer that indicates a
+              well-pulled shot.
+            </p>
+            <div class="box">
+              " Espresso is a highly concentrated coffee known for its intense
+              flavor and thick, syrupy body, created by pushing nearly boiling
+              water through finely-ground coffee at around 9 bars of pressure.
+              The result is a small, potent shot with a complex taste that can
+              be sweet, bitter, or even fruity, depending on the beans used and
+              the brewing technique. Espresso has a characteristic "crema"—a
+              golden, creamy foam that forms on top due to the pressure,
+              capturing oils and aromas from the coffee beans. Unlike drip
+              coffee, espresso is made quickly, in about 20–30 seconds, and is
+              both consumed on its own and used as a foundation for many classic
+              coffee drinks !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie1">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/coffee-card-02.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">AMERICANO COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>2 ounces (2 shots) espresso</li>
+              <li>4 ounces hot water</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              A smooth, mellow coffee with the boldness of espresso but less
+              intensity, resembling traditional drip coffee.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Add hot water slowly to avoid diluting the crema too much. For a
+              stronger Americano, use a double shot of espresso.
+            </p>
+            <div class="box">
+              " An Americano is a popular espresso-based coffee that combines
+              one or two shots of espresso with hot water, creating a drink
+              that's similar in strength to drip coffee but with a distinctively
+              rich, smooth taste. This method preserves the bold, slightly
+              caramelized flavor of espresso while mellowing its intensity and
+              bitterness with the addition of water. The Americano originated
+              during World War II, when American soldiers in Europe would dilute
+              espresso with hot water to make it resemble the coffee they were
+              used to back home. Today, it’s enjoyed for its versatility: you
+              can control the strength by adjusting the espresso-to-water ratio,
+              and it can be served hot or over ice. !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/cold brew pic 03.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">COLD BREW COFFEE ININGREDIENTS</p>
+            <ul id="list">
+              <li>1 cup (about 85 grams) of coarsely ground coffee beans</li>
+              <li>4 cups (950 ml) of cold, filtered water</li>
+              <li>Ice (for serving)</li>
+              <li>Ice (for serving)</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              Smooth, mild, and naturally sweet. Cold brewing reduces acidity,
+              making this drink refreshing and easy to sip.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Use a coarse grind and a 12-24 hour brew time for a perfect
+              balance. Serve over ice with milk or sweetener as desired.
+            </p>
+            <div class="box">
+              " Cold brew is a smooth, refreshing coffee made by steeping coarse
+              coffee grounds in cold water for an extended period, usually 12-24
+              hours. Unlike iced coffee, which is brewed hot and then chilled,
+              cold brew is never heated, less acidic taste profile due to the
+              slow extraction process. This method produces a concentrated
+              coffee that can be diluted with water, milk, or even flavored
+              syrups to customize its strength and flavor. Known for its smooth,
+              full-bodied taste and subtle chocolatey notes, it’s a favorite for
+              coffee lovers who enjoy a gentler, more mellow coffee experience
+              without the bitterness of traditional hot-brewed coffee !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie1">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/coffee-card-04.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">CAPPUCCINO COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>2 tablespoons finely ground dark roast coffee</li>
+              <li>4 ounces water</li>
+              <li>4 ounces milk</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              Known for its equal parts espresso, steamed milk, and foam, the
+              cappuccino offers a balanced, rich flavor and a thick, foamy
+              texture.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Use foamy, airy milk for the top layer to contrast with the smooth
+              espresso. You can sprinkle a little cocoa powder or cinnamon on
+              top for added flavor.
+            </p>
+            <div class="box">
+              "A cappuccino is a classic espresso-based coffee drink that
+              consists of equal parts espresso, steamed milk, and milk foam,
+              resulting in a balanced, creamy, and velvety texture. Originating
+              in Italy, cappuccinos are known for their rich, bold coffee flavor
+              combined with the sweetness and smoothness of the milk. Typically
+              served in a small cup, a cappuccino has a stronger espresso taste
+              than a latte due to its smaller milk content, and the foam layer
+              provides a satisfying mouthfeel. Many baristas top it with a
+              sprinkle of cocoa powder or cinnamon for added aroma and flavor.
+              It’s a perfect choice for coffee enthusiasts who enjoy a blend of
+              robust coffee with the soothing creaminess of milk, making it a
+              timeless favorite in cafes worldwide. !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/coffee-card-01.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">MACCHIATO COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>2 cups milk</li>
+              <li>1 ⅓ cups hot freshly brewed dark roast espresso coffee</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              A delicious mix of coffee and chocolate. The espresso brings the
+              richness, while the chocolate adds a sweet twist.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              ry using dark chocolate syrup or cocoa powder for a rich taste.
+              Topping with whipped cream makes it extra indulgent and visually
+              appealing.
+            </p>
+            <div class="box">
+              " A mocha is an indulgent espresso-based coffee drink that
+              combines the rich flavors of coffee and chocolate, typically made
+              with a shot of espresso, steamed milk, and chocolate syrup or
+              cocoa powder, topped with a layer of whipped cream or milk foam.
+              This blend of espresso’s boldness and chocolate’s sweetness
+              creates a decadent, dessert-like coffee with a smooth, creamy
+              texture. The mocha’s deep, chocolatey notes balance the espresso's
+              intensity, making it a favorite for those who enjoy a sweeter,
+              more luxurious coffee experience. Often garnished with chocolate
+              shavings or a drizzle of chocolate syrup, a mocha is both visually
+              appealing and richly satisfying, perfect for anyone who loves the
+              classic pairing of coffee and chocolate. !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie1">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/coffee-card-03.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">FLAT WHITE COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>
+                1-2 shots of espresso (usually a ristretto for a bolder taste)
+              </li>
+              <li>
+                Steamed milk with microfoam (smooth, fine bubbles for a velvety
+                texture)
+              </li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              Similar to a latte but with a higher espresso-to-milk ratio and
+              finer microfoam. Creamy and smooth but with a stronger coffee
+              taste.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Aim for a velvety microfoam by stretching the milk just enough to
+              incorporate tiny bubbles. Great for those who want a balanced,
+              rich coffee flavor.
+            </p>
+            <div class="box">
+              " A Flat White is an espresso-based coffee drink made with a shot
+              or two of espresso and topped with steamed, velvety microfoam
+              milk. Originating from Australia and New Zealand, the flat white
+              is similar to a latte but with less milk, creating a stronger
+              espresso flavor and a creamy texture.The flat white stands out for
+              its balance of bold coffee and creamy milk, with a texture that’s
+              smoother and less frothy than a cappuccino. The thin layer of
+              microfoam sits right at the top without the airy, thick foam
+              typical of a cappuccino. This allows the rich espresso flavor to
+              shine through without being overpowered by milk, making it a
+              favorite among those who enjoy the intensity of espresso with a
+              soft, luxurious mouthfeel. !! "
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipie">
+        <div class="container">
+          <img
+            id="image"
+            src="/assects/images/latte coffe pic 01.jpg"
+            alt="Espresso-image"
+          />
+
+          <div class="coffeedesc">
+            <p id="menu">LATTE COFFEE INGREDIENTS</p>
+            <ul id="list">
+              <li>2 cups milk</li>
+              <li>1 ⅓ cups hot freshly brewed dark roast espresso coffee</li>
+            </ul>
+            <p id="desc">
+              <b>Description:</b>
+              Creamy and smooth with a mild coffee flavor. A popular drink for
+              those who enjoy a subtler coffee taste with a touch of foam on
+              top.
+            </p>
+            <p id="tips">
+              <b> Tips:</b>
+              Texture is key—use steamed milk with tiny bubbles to create a
+              silky feel. Perfect for latte art if you have the skill!
+            </p>
+            <div class="box">
+              " A latte is a classic coffee drink that emphasizes the natural
+              harmony between rich espresso and creamy steamed milk. Crafted
+              with one to two shots of espresso, the latte is topped with a thin
+              layer of foam, creating a luscious, silky texture that smooths the
+              espresso's boldness while enhancing its subtle flavors. The ample
+              steamed milk gives it a comforting sweetness, resulting in a
+              mellow, full-bodied taste experience that is satisfying on its own
+              or enhanced with flavors like vanilla, caramel, or spices. The
+              latte is also the perfect canvas for intricate latte art, making
+              it both visually appealing and indulgent for coffee lovers. !! "
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+ 
+  </body>
+</html>
