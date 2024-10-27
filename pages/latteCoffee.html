@@ -4,7 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/index.css" />
+    <style>
+      .body {
+      }
+      .container {
+        width: 80%;
+        height: calc(100vh - 150px);
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 0 0 20px gray;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        
+      }
+      #image {
+        width: 30%;
+        height: calc(100vh - 170px);
+      }
+      .coffeedesc {
+        width: 70%;
+        height: calc(100vh - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        
+        
+      }
+
+      #list {
+        margin: 0;
+        font-size: 20px;
+        
+      }
+
+      #desc {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 20px;
+      }
+      #tips {
+        margin: 0;
+        padding: 0 30px;
+        font-size: 20px;
+      }
+      #menu {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .box {
+        margin: 0;
+        width: 500px;
+        height: 300px;
+        font-size: 20px;
+        object-fit: cover;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -26,5 +91,45 @@
         </ul>
       </div>
     </header>
+    <main>
+      <div class="container">
+        <img
+          id="image"
+          src="/assects/images/espresso coffee.jpg"
+          alt="Espresso-image"
+        />
+
+        <div class="coffeedesc">
+          <p id="menu">INGREDIENTS</p>
+          <ul id="list">
+            <li>18-20 grams of freshly ground coffee (for a double shot)</li>
+            <li>Filtered water (about 200°F or 93°C)</li>
+          </ul>
+          <p id="desc">
+            <b>Description:</b>
+            A highly concentrated, intense shot of coffee with a robust, rich
+            flavor. The heart of many coffee drinks.
+          </p>
+          <p id="tips">
+            <b> Tips:</b>
+            Use a fine grind and fresh beans for optimal flavor. Aim for a
+            "crema" on top of a golden, foamy layer that indicates a well-pulled
+            shot.
+          </p>
+          <div class="box">
+            " Espresso is a highly concentrated coffee known for its intense
+            flavor and thick, syrupy body, created by pushing nearly boiling
+            water through finely-ground coffee at around 9 bars of pressure. The
+            result is a small, potent shot with a complex taste that can be
+            sweet, bitter, or even fruity, depending on the beans used and the
+            brewing technique. Espresso has a characteristic "crema"—a golden,
+            creamy foam that forms on top due to the pressure, capturing oils
+            and aromas from the coffee beans. Unlike drip coffee, espresso is
+            made quickly, in about 20–30 seconds, and is both consumed on its
+            own and used as a foundation for many classic coffee drinks !! "
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
