@@ -55,7 +55,8 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (max-width: 425px) {
+
+@media screen and (min-width: 0px) and (max-width: 321px) {
   .container {
     width: 90%;
     height: auto;
@@ -92,4 +93,159 @@
     font-size: 15px;
     margin-bottom: 20px;
   }
+}
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  .container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #image {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .coffeedesc {
+    width: 90%;
+    height: auto;
+  }
+  #menu {
+    font-size: 17px;
+  }
+  #list {
+    font-size: 15px;
+  }
+
+  #desc {
+    font-size: 15px;
+  }
+  #tips {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #image {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .coffeedesc {
+    width: 90%;
+    height: auto;
+  }
+  #menu {
+    font-size: 17px;
+  }
+  #list {
+    font-size: 15px;
+  }
+
+  #desc {
+    font-size: 15px;
+  }
+  #tips {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  #image {
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .coffeedesc {
+    width: 90%;
+    height: auto;
+  }
+  #menu {
+    font-size: 25px;
+  }
+  #list {
+    font-size: 20px;
+  }
+
+  #desc {
+    font-size: 20px;
+  }
+  #tips {
+    font-size: 20px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    height: calc(100% - 80px);
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+  }
+  #image {
+    width: 30%;
+    height: 500px;
+  }
+  .coffeedesc {
+    width: 60%;
+    height: auto;
+    margin: auto;
+  }
+  #menu {
+    font-size: 20px;
+  }
+  #list {
+    font-size: 15px;
+  }
+
+  #desc {
+    font-size: 15px;
+  }
+  #tips {
+    font-size: 15px;
+  }
+
+  .box {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 }

@@ -260,7 +260,7 @@ footer {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 0px) and (max-width: 321px) {
   .navBar {
     display: none;
   }
@@ -291,8 +291,9 @@ footer {
   .topic {
     margin: auto;
     font-size: 20px;
+    text-align: center;
   }
-  footer{
+  footer {
     height: auto;
   }
 
@@ -307,24 +308,268 @@ footer {
   .f-content {
     width: 100%;
     height: auto;
-
   }
-  
+
   .about {
-   font-size: 10px;
- 
+    font-size: 10px;
   }
   .overview {
     font-size: 10px;
-
   }
   .contacts {
-font-size: 20px;
-
+    font-size: 20px;
   }
   .contacts p {
     font-size: 15px;
-
+  }
+  .menu-list {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  .navBar {
+    display: none;
+  }
+  #burgerbtn {
+    display: block;
+  }
+  .menu-list.active {
+    right: 0px;
+  }
+  #burgerbtn {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 25px;
+  }
+  header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .topic {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  footer {
+    height: auto;
   }
 
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .f-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    font-size: 10px;
+  }
+  .overview {
+    font-size: 10px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .contacts p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  .navBar {
+    display: none;
+  }
+  #burgerbtn {
+    display: block;
+  }
+  .menu-list.active {
+    right: 0px;
+  }
+  #burgerbtn {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 25px;
+  }
+  header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .topic {
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .f-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    font-size: 10px;
+  }
+  .overview {
+    font-size: 10px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .contacts p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .navBar {
+    display: none;
+  }
+  #burgerbtn {
+    display: block;
+  }
+  .menu-list.active {
+    right: 0px;
+  }
+  #burgerbtn {
+    font-size: 25px;
+  }
+  .name {
+    font-size: 25px;
+  }
+  header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .topic {
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .f-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    font-size: 15px;
+  }
+  .overview {
+    font-size: 15px;
+  }
+  .contacts {
+    font-size: 25px;
+  }
+  .contacts p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  .navBar {
+    display: block;
+  }
+  #burgerbtn {
+    display: none;
+  }
+  .menu-list.active {
+    right: 0px;
+  }
+  #burgerbtn {
+    font-size: 25px;
+  }
+  .name {
+    font-size: 25px;
+  }
+  header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .description {
+    font-size: 20px;
+  }
+  .topic {
+    margin: auto;
+    font-size: 30px;
+    text-align: center;
+  }
+  footer {
+    height: auto;
+  }
+
+  .footer-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .about {
+    font-size: 10px;
+  }
+  .overview {
+    font-size: 10px;
+  }
+  .contacts {
+    font-size: 20px;
+  }
+  .contacts p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
 }
