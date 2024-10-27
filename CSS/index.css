@@ -260,7 +260,7 @@ footer {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 0px) and (max-width: 321px) {
+@media screen and (min-width: 0px) and (max-width: 320px) {
   .navBar {
     display: none;
   }
@@ -326,7 +326,7 @@ footer {
     width: 200px;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 376px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
   .navBar {
     display: none;
   }
@@ -389,7 +389,7 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 376px) and (max-width: 426px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
   .navBar {
     display: none;
   }
@@ -452,7 +452,7 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 426px) and (max-width: 769px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
   .navBar {
     display: none;
   }
@@ -515,7 +515,7 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 1025px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .navBar {
     display: block;
   }
