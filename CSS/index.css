@@ -389,7 +389,7 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 375px) and (max-width: 426px) {
   .navBar {
     display: none;
   }
@@ -452,7 +452,7 @@ footer {
     font-size: 15px;
   }
 }
-@media screen and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 769px) {
   .navBar {
     display: none;
   }
@@ -515,7 +515,7 @@ footer {
     font-size: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .navBar {
     display: block;
   }
